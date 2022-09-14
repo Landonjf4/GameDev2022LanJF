@@ -5,3 +5,5 @@ bees, bees, bees, bees, bees, bees, buzz buzz
 
 My Github page
 <a href="Github page">https://github.com/Landonjf4/GameDev2022LanJF/</a>
+
+My profile <a href="">https://github.com/Landonjf4</a>
