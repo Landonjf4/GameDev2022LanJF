@@ -1,6 +1,8 @@
 
 <a href="https://landonjf4.github.io/GameDev2022LanJF/">This website</a>
 
+<a href="https://landonjf4.github.io/GameDev2022LanJF/public">Public version of website</a>
+
 <a href="https://github.com/Landonjf4/GameDev2022LanJF/">My Github</a>
 
 <a href="https://github.com/Landonjf4">My profile</a>
