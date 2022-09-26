@@ -31,18 +31,23 @@
  
  <b>Assignment</b> Make a 3 x 4 table,
  then make a link table with border = 0<br><br><br>
- 
+
+ <table border=0>
+ <tr><td>A</td> <td>B</td></tr> <tr><td>C</td> <td>D</td></tr>
+ <td>E</td></tr> <td>F</td></tr> <td>G</td></tr> <td>H</td></tr>
+<td>I</td></tr> <td>J</td></tr> <td>K</td></tr> <td>L</td></tr>
+ </table><br>
+
  <h2>Advanced</h2>
  
  Load an image and get it to move 10 pixels to the left using the button below<br>
  
- <image id="myImage01" src"" style="position:relative; left:0; top:0; width:50; height:50; "><br>
+ <image id="myImage01" src"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewtxIsKQfiI2JONgwMZM5zGM-FlIM5Wkbm7bWHgk6CA&s" style="position:relative; left:10; top:10; width:50; height:50; "><br>
  
  <input type=button value="Go left" oneclick="{
   document.getElementById('myImage01').style.left = '200px'
   document.getElementById('myDiv01').innerHTML = 'It went left'
   }">
-  
   
   
   <div id="myDiv01">...</div>
