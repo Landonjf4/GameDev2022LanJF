@@ -53,7 +53,11 @@ dot78 - Functions<br>
 
 
 dot79 - Class objects<br>
-<img width=200 src="![image](https://user-images.githubusercontent.com/113378457/192842972-70beecfd-682f-4c43-b865-6ad1bc7348df.png)"/><br><br>
+<img width=200 src="https://user-images.githubusercontent.com/113378457/192842972-70beecfd-682f-4c43-b865-6ad1bc7348df.png"/><br><br>
 
 
+
+
+
+![image](https://user-images.githubusercontent.com/113378457/192844246-31919b88-e02d-4427-a184-bc034042a917.png)
 
