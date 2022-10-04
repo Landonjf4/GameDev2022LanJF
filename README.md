@@ -61,3 +61,5 @@ dot79 - Class objects<br>
 
 ![image](https://user-images.githubusercontent.com/113378457/192844246-31919b88-e02d-4427-a184-bc034042a917.png)
 
+
+https://github.com/hpssjellis/high-school-javascript-game-dev-assignment-images<br><br>
