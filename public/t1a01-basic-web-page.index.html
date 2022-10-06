@@ -22,40 +22,58 @@ Plain <b> Bold </B> and <i> Italic </i> can you put them together<br>
 <span> a span</span>
 <center><h3> Write about Ellis' 9 main areas of coding</h3>
       
-<input type=button vaule="0. Pseudo Code" oneclick="{
+<input type=button value="0. Pseudo Code" onclick="{
   document.getElementById('myDiv01').innerHTML = 'Hello dont world'
-                                                          }">
- <input type=button value="1 Variables" oneclick="{                                      
-                                                  }"><br>
-<input type=button vaule="2. Input/Output" oneclick="{
-                                            
-  }"><br>
-  <input type=button value="3. Decisions" oneclick="{
-                                                    
-                                                    }"><br>
-  <input type=button value="4. Events" oneclick="{
-                                                 
-                                                 }"><br>
-  <input type=button value="5. Objects" oneclick="{
-                                                  
-                                                  }"><br>
-  
-  <input type=button value="6. Functions" oneclick="{
-                                                    
-                                                    }"><br>
-  <input type=button value="7. Loops" oneclick="{
-                                                
-                                                }"><br>
-  
-  <input type=button value="8. Arrays" oneclick="{
-                                                 
-                                                 }"><br>
-  
-  <input type=button value="9. Classes" oneclick="{
-                                                  
-                                                  }"><br>
-      <center>You do: 1:Variables 2:Input/Output, 3:Decisions, 4: Events, 5:Object, 6:Functions, 7:Loops, 8:Arrays, 9:classes<br>
+                                                          }"><br><br>
+   
+
+<input type=button value="1" onclick="{
+    
+<input type="text" id="myTextIn1" value="1" size="10">  + <input type="button" id="myTextIn2" value="10" size="30"> 
+
+<input id="myButton124" type="button" value="Adding numbers" onclick="{
+
+   var my1 = document.getElementById('myTextIn1').value  
+   var my2 = document.getElementById('myTextIn2').value  
       
-      <div id="myDiv01">...</div>
-      <body>
+   document.getElementById('myDiv124').innerHTML +=   my1 + ' + ' +  my2 + ' = ' +  (parseInt(my1) + parseInt(my2))  + '<br>'   
+
+                                                              
+
+
+
+                                                          }"><br><br>
+  <input type=button value="2. Input/Output" onclick="{
+                                            
+  }"><br><br>
+  <input type=button value="3. Decisions" onclick="{
+                                                    
+                                                    }"><br><br>
+  <input type=button value="4. Events" onclick="{
+                                                 
+                                                 }"><br><br>
+  <input type=button value="5. Objects" onclick="{
+                                                  
+                                                  }"><br><br>
+  
+  <input type=button value="6. Functions" onclick="{
+                                                    
+                                                    }"><br><br>
+  <input type=button value="7. Loops" onclick="{
+                                                
+                                                }"><br><br>
+  
+  <input type=button value="8. Arrays" onclick="{
+                                                 
+                                                 }"><br><br>
+  
+  <input type=button value="9. Classes" onclick="{
+                                                  
+                                                  }"><br><br>
+      <center>You do: 1:Variables 2:Input/Output, 3:Decisions, 4: Events, 5:Object, 6:Functions, 7:Loops, 8:Arrays, 9:classes<br><br>
+      
+      <div id="myDiv01">Pseudo Code</div>
+      
+    <div id='myDiv124'>Variables: </div><br>
+      </body>
         </html>
