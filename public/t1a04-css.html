@@ -28,9 +28,59 @@ p {
 </html>
 
 
-<b > This is bold</b><br>
-<b id="myB1" style="color:#f0f0f0; background-Color:blue; "> This is bold</b>
-<input type=button value=Change oneclick="{
-                                          document.getElementById('myB1').style.color = 'red'
-                                          document.getElementById('myB1').style.backgroundColor = 'yellow'
-                                          }"><br>
+<b > This is bold </b><br>
+<b id="myB1" style="color:#00ff00; background-color:blue; "> This is bold</b>
+<input type=button value=Change onclick="{
+document.getElementById('myB1').style.color = 'red'
+document.getElementById('myB1').style.backgroundColor = 'yellow'
+}"><br>
+
+
+<textarea style="position:relative; left:0; top:0; width:200; height:20; ">
+Advanced see if you move this textarea
+</textarea><br>
+
+<h1 align=center>Different font styles</h1>
+<style>
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+</style>
+
+
+<h1>CSS font-family</h1>
+<p class="p1">This is Times New Roman font</p>
+<p class="p2">This is Arial font</p>
+<p class="p3">This is Lucida Console font.</p>
+
+<h1 align=center>Rounded corners for text with background colors</h1>
+
+<style> 
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+  
+  
+
+
+</style>
+
+
+
+
+
+<p id="rcorners1">Rounded corners!</p>
+
+
