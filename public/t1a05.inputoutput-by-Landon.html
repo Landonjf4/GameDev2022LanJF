@@ -2,26 +2,40 @@ Version 0.0.1
 
 <h2 align=center>t1a05-Input and Output by Landon</h2>
 
-<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to Input Output
+<h3 align=center> <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to Input Output</a></h3><br><br>
   
-  Javascript innerHTML by Landon</a>
+<b>Addition</b>
 
-<h4> Example Input Output code</h4>
+  
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="100">
++ <input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
 
-<pre>
-let myIn01 = document.getElementById('myNum01').value
-document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*myIn01
-</pre>
+<b>Subtraction</b>
 
-<h4> Example working code</h4>
+<form oninput="x.value=parseInt(c.value)-parseInt(d.value)">
+<input type="range" id="c" value="100">
+- <input type="number" id="d" value="50">
+=<output name="x" for="c d"></output>
+</form>
 
-<input id="myNum01" type=number value="4" ><br>
+  
+<b>Multiplication</b>
+  <form oninput="x.value=parseInt(e.value)*parseInt(f.value)">
+<input type="range" id="e" value="100">
+* <input type="number" id="f" value="50">
+=<output name="x" for=" e f"></output>
+</form>
 
-<input ttype=button value="myEvent squares" oneclick="{
-                                                      let myIn01 = parseFloat(document.getElementById('myNum01').value)
-                                                      let myAnswer = myIn01 * myIn01
-                                                      document.getElementById('myDiv01').innerHTML = 
-                                                      myIn01 + ' squared = ' + myAnswer
-                                                      }"><br>
+  
 
-<div id="myDiv01">. . .</div>
+  
+<b>Division</b>
+
+  <form oninput="x.value=parseInt(g.value)/parseInt(h.value)">
+<input type="range" id="g" value="100"> 
+/ <input type="number" id="h" value="50">
+=<output name="x" for="g h"></output>
+</form>
