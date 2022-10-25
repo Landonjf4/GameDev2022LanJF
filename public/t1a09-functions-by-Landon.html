@@ -25,11 +25,27 @@ return parseInt(document.getElementById('myText01').value)
 }
 </pre>
 
-<h4> Exmaple working code </h4>
+<h4> Multiplacation using variables </h4>
+---------------
+<p id="myDiv01"></p>
 
-<input type=text id="myText01" value="10"><br>
-<input type=button value="Function Exmaple" onClick="{
-                                                     document.getElementById('myDiv01').innerHTML = myExampleFunction()
-                                                     }">
+<script>
+var x = myFunction(4, 3);
+document.getElementById("myDiv01").innerHTML = x;
 
-<div id="myDiv01">. . .</div>
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+<p id="myDiv02"></p>
+
+<script>
+var y = myFunction(-12, -30);
+document.getElementById("myDiv02").innerHTML = y;
+
+function myFunction(c, d) {
+  return c * d;
+}
+</script>
+
+
