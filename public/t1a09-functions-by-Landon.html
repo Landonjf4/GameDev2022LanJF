@@ -8,7 +8,7 @@
   }
 </script>
 
-Version 0.0.1
+Version 0.0.2
 
 <h2 align=center>t1a09-functions-by-Landon</h2>
 
@@ -25,9 +25,9 @@ return parseInt(document.getElementById('myText01').value)
 }
 </pre>
 
-<h4> Multiplacation using variables </h4>
----------------
-<p id="myDiv01"></p>
+<h3 align=center> Multiplacation using variables </h3>
+
+<p id="myDiv01"></p><br>
 
 <script>
 var x = myFunction(4, 3);
@@ -37,7 +37,8 @@ function myFunction(a, b) {
   return a * b;
 }
 </script>
-<p id="myDiv02"></p>
+
+<p id="myDiv02"></p><br>
 
 <script>
 var y = myFunction(-12, -30);
@@ -47,5 +48,39 @@ function myFunction(c, d) {
   return c * d;
 }
 </script>
+<h3 align=center>Multiplacation using two variables</h3><br><br>
+<div id="myDiv03"></div><br>
+
+<script>
+
+var x = 12;
+var y = 360;
+var z = x * y;
+document.getElementById("myDiv03").innerHTML = z;
+</script>
+
+<h3 align=center>Adding, Subtracting, Multiplying, Dividing </h3>
+<h3 align=center>Using 10 Variables</h3>
+
+
+<div id="myDiv04"></div><br>
+
+
+<script>
+var e = 1;
+var f = 2;
+var g = 3;
+var h = 4;
+var i = 5;
+var j = 6;
+var k = 7;
+var l = 8;
+var m = 9;
+var n = e * f + g * h + i * j / k * l - m;
+document.getElementById("myDiv04").innerHTML = n;
+</script>
+
+
+
 
 
