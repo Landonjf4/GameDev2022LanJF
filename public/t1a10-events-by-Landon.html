@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.2
 
 <h2 align=center>t1a10-events-by-Landon.html</h2>
 
@@ -15,27 +15,203 @@ Events are HTML code that activates Javascript code
   }" &gt
 </pre>
 
-<h4>Example working code</h4>
+<h2>Example working code</h2>
 
-<input type=text id="myText01" value="10"><br>
+<input type=text id="myText01" value="10"><br><br>
 
 <input type=button value="Example onClick" onClick="{
                                                     document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
                                                     
-                                                    }">
+                                                    }"><br><br>
 
-<div id="myDiv01">. . .</div>
+<div id="myDiv01">onClick example</div><br><br>
+
+
+<h2>onDbClick</h2>
+
+
+
+<button ondblclick="myFunction()">Double click to see the output.</button><br><br>
+
+<p id="myDiv02"></p>
+
+
+<h2>onChange</h2>
+
+<select id="mySelect" onChange="myFunction2()">
+  <option value="Red">Red</option>
+  <option value="Orange">Orange</option>
+  <option value="Yellow">Yellow</option>
+  <option value="Green">Green</option>
+  <option value="Blue">Blue</option>
+  <option value="Purple">Purple</option>
+  <option value="Pink">Pink</option>
+</select>
+
+<p>When you select a color, a function is triggered which outputs the value of the selected color.</p>
+
+<p id="myDiv04"></p><br><br>
+
+<script>
+function myFunction2() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("myDiv04").innerHTML = "You selected: " + x;
+}
+</script>
+
+
+
+<h2>onBlur</h2>
+
+
+
+Enter some text: <input type="text" id="fname" onblur="myFunction3()">
+
+<p>When you click off the text, the text turns into uppercase</p>
+
+<script>
+function myFunction3() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script><br><br>
+
+
+
+
+<h2>onFocus</h2>
+
+Click me: <input type="button" onfocus="myFunction4(this)">
+
+<p>When you click on the button, the button color changes to orange!</p>
+
+<script>
+function myFunction4(x) {
+  x.style.background = "Orange";
+}
+</script><br><br>
+
+
+
+
+
+
+
+
+
+
+
+<h2>onMouseMove</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>onTouch</h2>
+
+
+
+
+
+
+<h2>onKeyDown</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>onKeyPress</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>onDragStart</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>onTouchStart</h2>
+
+
+
+
+
+
+
+
+
+<h2>onTouchEnd</h2>
+
+
+
+
+
+
+
+
+
+
+<h2>onTouchMove</h2>
+
+
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDiv02").innerHTML = "The output";
+}
+</script><br><br>
 
 <b id="myB01" onMouseOut="{
                           document.getElementById('myB01').innerHTML = 'This is bold'
                           }" onMouseOver="{
                           document.getElementById('myB01').innerHTML = 'This is very cool'
-                                          }" > This is bold</b>
+                                          }"> <b>This is bold</b>
+                                          
+                                          
 
 
 
 <br>
 
 You do at least 8 other events:<br>
-Onclick, onDbClick, onChange, onBlue, onFocus, onMouseMove, onTouch,
+Onclick, onDbClick, onChange, onBlur, onFocus, onMouseMove, onTouch,
 onKeyDown, onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
