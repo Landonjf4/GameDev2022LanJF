@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2 align=center>t1a10-events-by-Landon.html</h2>
 
@@ -15,7 +15,7 @@ Events are HTML code that activates Javascript code
   }" &gt
 </pre>
 
-<h2>Example working code</h2>
+<h2>1: onClick</h2>
 
 <input type=text id="myText01" value="10"><br><br>
 
@@ -27,7 +27,7 @@ Events are HTML code that activates Javascript code
 <div id="myDiv01">onClick example</div><br><br>
 
 
-<h2>onDbClick</h2>
+<h2>2: onDbClick</h2>
 
 
 
@@ -36,7 +36,7 @@ Events are HTML code that activates Javascript code
 <p id="myDiv02"></p>
 
 
-<h2>onChange</h2>
+<h2>3: onChange</h2>
 
 <select id="mySelect" onChange="myFunction2()">
   <option value="Red">Red</option>
@@ -61,7 +61,7 @@ function myFunction2() {
 
 
 
-<h2>onBlur</h2>
+<h2>4: onBlur</h2>
 
 
 
@@ -79,9 +79,9 @@ function myFunction3() {
 
 
 
-<h2>onFocus</h2>
+<h2>5: onFocus</h2>
 
-Click me: <input type="button" onfocus="myFunction4(this)">
+Click to change the color: <input type="button" value="Click me!" onfocus="myFunction4(this)">
 
 <p>When you click on the button, the button color changes to orange!</p>
 
@@ -101,7 +101,7 @@ function myFunction4(x) {
 
 
 
-<h2>onMouseMove</h2>
+<h2>6: onMouseMove</h2>
 
 
 
@@ -109,43 +109,80 @@ function myFunction4(x) {
 
 
 
+<html>
+<head>
+<style>
+div{
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+</style>
+</head>
+</html>
 
 
+<p>This example demonstrates how to assign an "onmousemove" event to a div element.</p>
 
+<div onmousemove="myFunction6(event)"></div>
 
+<p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
 
+<p id="myDiv06"></p>
 
+<script>
+function myFunction6(e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("myDiv06").innerHTML = coor;
+}
+</script>
 
 
 
 
-<h2>onTouch</h2>
 
 
 
 
 
 
-<h2>onKeyDown</h2>
 
 
 
 
+<h2>7: onTouch</h2>
+<h4 align=center>onTouchStart event</h4>
+<p ontouchstart="myFunction51()">Touch this paragraph to trigger a function that will write "Hello World".</p>
 
+<p><strong>Note:</strong> This example is for touch devices only.</p>
 
+<p id="myDiv51"></p>
 
+<script>
+function myFunction51() {
+  document.getElementById("myDiv51").innerHTML = "Hello World";
+}
+</script><br><br>
 
 
 
 
 
 
-<h2>onKeyPress</h2>
 
 
 
+<h2>8: onKeyDown</h2>
 
+<input type="text" onkeydown="myFunction8()">
 
+<script>
+function myFunction8() {
+  alert("You pressed a key inside the input field");
+}
+</script>
 
 
 
@@ -154,12 +191,18 @@ function myFunction4(x) {
 
 
 
-<h2>onDragStart</h2>
 
 
 
+<h2>9: onKeyPress</h2>
 
+<input type="text" onkeypress="myFunction9()">
 
+<script>
+function myFunction9() {
+  alert("You pressed a key inside the input field");
+}
+</script>
 
 
 
@@ -168,30 +211,125 @@ function myFunction4(x) {
 
 
 
-<h2>onTouchStart</h2>
 
 
 
+<h2>10: onDragStart</h2>
 
+<head>
+<style>
+.droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
 
+<p>Drag the p element back and forth between the two rectangles:</p>
 
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Drag me!</p>
+</div>
 
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
+<p id="myDiv10"></p>
 
-<h2>onTouchEnd</h2>
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+  document.getElementById("myDiv10").innerHTML = "Started to drag the p element";
+}
 
+function dragEnd(event) {
+  document.getElementById("myDiv10").innerHTML = "Finished dragging the p element.";
+}
 
+function allowDrop(event) {
+  event.preventDefault();
+}
 
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+}
+</script>
 
+</body><br><br><br><br><br><br>
 
 
 
 
 
 
-<h2>onTouchMove</h2>
 
 
+
+
+
+<h2>11: onTouchStart</h2>
+
+
+<p ontouchstart="myFunction52()">Touch this paragraph to trigger a function that will write "Hello World".</p>
+
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="myDiv52"></p>
+
+<script>
+function myFunction51() {
+  document.getElementById("myDiv52").innerHTML = "Hello World";
+}
+</script><br><br>
+
+
+
+
+
+
+
+<h2>12: onTouchEnd</h2>
+
+<p ontouchend="myFunction53()">Touch this paragraph, then release the touch to trigger a function that will write "Hello World".</p>
+
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="myDiv53"></p>
+
+<script>
+function myFunction53() {
+  document.getElementById("myDiv53").innerHTML = "Hello World";
+}
+</script>
+
+
+
+
+
+
+
+
+<h2>13: onTouchMove</h2>
+
+<p ontouchmove="myFunction54(event)">Touch this paragraph, and move the finger to trigger a function that will display the x and y coordinates of the touch, according the the document:</p>
+
+<p><strong>Note:</strong> This example is for touch devices only.</p>
+
+<p id="myDiv13"></p>
+
+<script>
+function myFunction54(event) {
+  var x = event.touches[0].clientX;
+  var y = event.touches[0].clientY;
+  document.getElementById("myDiv13").innerHTML = x + ", " + y;
+}
+</script>
 
 
 <script>
@@ -212,6 +350,17 @@ function myFunction() {
 
 <br>
 
-You do at least 8 other events:<br>
-Onclick, onDbClick, onChange, onBlur, onFocus, onMouseMove, onTouch,
-onKeyDown, onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
+<li>You do at least 8 other events:<br>
+<li>Onclick</li>
+<li>onDbClick</li>
+<li>onChange</li>
+<li>onBlur</li>
+<li>onFocus</li>
+<li>onMouseMove</li>
+<li>onTouch</li>
+<li>onKeyDown</li>
+<li>onKeyPress</li>
+<li>onDragStart</li>
+<li>onTouchStart</li> 
+<li>onTouchEnd</li> 
+<li>onTouchMove</li>
