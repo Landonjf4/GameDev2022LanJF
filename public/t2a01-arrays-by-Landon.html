@@ -1,38 +1,62 @@
 Version 0.0.1
 <h2 align=center>t2a01-arrays-by-Landon.html</h2>
 
-<a href="">Good reference to Javascript Arrays</a><br>
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_element">Good reference to Javascript Arrays</a><br>
 
 Arrays are stored numbered variables
 
 <h4> Example array code</h4>
 <pre>
 myArray = new Array()
-myArray[0] = 'Landon'
-myArray[1] = 'Caileb'
+myArray[0] = 'First Person'
+myArray[1] = 'Second Person'
 
 </pre>
 
 <h4>Example working Array code</h4>
 
-Max Array Entry: <input type=text id="myText01" value="3"><br>
+Max Array Entry: <input type=text id="myText01" value="11"><br>
 
 <input type=button value="Example onClick" onClick="{
 let myTemp = document.getElementById('myText01').value
-                                                    let mySum = ''
-                                                    
-                                                    document.getElementById('myDiv01').innerHTML = ''
-                                                    
-                                                    myArray = newArray()
-                                                    myArray[0] = 'Landon'
-                                                    myArray[1] = 'Caileb'
-                                                    myArray[2] = 'Dale'
-                                                    
-                                                    for (let myLoop=0; myLoop < myTemp; myLoop++){
-                                                    mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
-                                                    }
-                                                 document.getElementById('myDiv01').innerHTML = mySum
-                                                    
-                                                    }">
+let mySum = ''
+document.getElementById('myDiv01').innerHTML = ''
+
+myArray = new Array()
+myArray[0] = 'Person Zero'
+myArray[1] = 'Person One'
+myArray[2] = 'Person Two'
+myArray[3] = 'Person Three'
+myArray[4] = 'Person Four'
+myArray[5] = 'Person Five'
+myArray[6] = 'Person Six'
+myArray[7] = 'Person Seven'
+myArray[8] = 'Person Eight'
+myArray[9] = 'Person Nine'
+myArray[10] = 'Person Ten'
+
+
+for (let myLoop=0; myLoop < myTemp; myLoop++){
+	mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
+    }
+    document.getElementById('myDiv01').innerHTML = mySum
+    }">
+   
 
 <div id="myDiv01">. . . </div>
+
+<h2>W3schools Array code</h2>
+<h4>Array 0</h4>
+<p id="MyDiv02"></p><br><br>
+<h4>Array 1</h4>
+<p id="MyDiv03"></p><br><br>
+<h4>Array 2</h4>
+<p id="MyDiv04"></p><br><br>
+
+<script>
+const People = ["Person One", "Person Two", "Person Three"];
+document.getElementById("MyDiv02").innerHTML = People[0];
+document.getElementById("MyDiv03").innerHTML = People[1];
+document.getElementById("MyDiv04").innerHTML = People[2];
+
+</script>
