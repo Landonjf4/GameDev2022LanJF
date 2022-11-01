@@ -4,37 +4,19 @@ Version 0.0.1
 
 <a href="">Good reference to Javascript Objects</a><br>
 
-Objects are stored named variables
+<h2>JavaScript Objects</h2>
 
-<h4> Example Objects code</h4>
-<pre>
-let myPerson = {
-  "firstName": "John",
-  "lastName": "Doe",
-  "age": 50,
-  "eyeColor": "blue"
-  }
-  
-  </pre>
+<p id="Mydiv01"></p>
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
 
-<h4> Example working Objects code</h4>
-Nothing: <input type=text id="Example Object Set and Show" onClick="{
-  
-  let myPerson = {
-  'firstName' : 'John',
-  'lastName' : 'Doe',
-  'age' : 50,
-  'eyeColor' : 'blue'
-  }
-  
-  document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
-  document.getElementById('myDiv01').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
-  document.getElementById('myDiv01').innerHTML += 'lastName: ' + myPerson.lastName + '<br>
-  document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>
-  document.getElementById('myDiv01').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>
-  
-  }">
-
-<div id="myDiv01">. . .</div>
-
-<br>
+// Display some data from the object:
+document.getElementById("myDiv01").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
