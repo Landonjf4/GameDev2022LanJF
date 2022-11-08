@@ -1,4 +1,33 @@
-Version 0.0.1
-<h2 align=center>t2a12-Pay-by Landon.html</h2>
 
-Taxes
+<h2>Gross Pay</h2><br><br>
+  <form oninput="Total.value=parseInt(Salary.value)*parseInt(Hours.value)">
+<b>Money: </b><input type="number" id="Salary" value="15.65"><br><br>
+ <b>Hours: </b> <input type="number" id="Hours" value="8"><br><br>
+<b>Gross Pay</b> = <output name="Total" for=" Salary Hours"></output>
+</form><br>
+
+
+
+
+<h2>Taxes</h2><br><br>
+
+<form oninput="Total.value=parseInt(Salary.value)*parseInt(Hours.value)/parseInt(Taxes.value)">
+<b>Money: </b><input type="number" id="Salary" value="15.65"><br><br>
+ <b>Hours: </b> <input type="number" id="Hours" value="8"><br><br>
+ <b>Taxes: </b> <input type="number" id="Taxes" value="30"><br><br>
+<b>Tax money that is deducted:  </b> <output name="Total" for=" Salary Hours"></output>$
+
+</form><br>
+
+<h2>Net Pay (WIP)</h2><br><br>
+
+<form oninput="Total.value=parseInt(Salary.value)*parseInt(Hours.value)/parseInt(Taxes.value)">
+<b>Money: </b><input type="number" id="Salary" value="15.65"><br><br>
+ <b>Hours: </b> <input type="number" id="Hours" value="8"><br><br>
+ <b>Taxes: </b> <input type="number" id="Taxes" value="0.30">%<br><br>
+<b>Net Pay:  </b> <output name="Total" for=" Salary Hours"></output>$
+
+</form><br>
+  
+
+  
