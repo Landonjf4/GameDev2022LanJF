@@ -1,6 +1,6 @@
 
 <h2>Gross Pay</h2><br><br>
-  <form oninput="Total.value=parseInt(Salary.value)*parseInt(Hours.value)">
+  <form oninput="Total.value=parseFloat(Salary.value)*parseInt(Hours.value)">
 <b>Money: </b><input type="number" id="Salary" value="15.65"><br><br>
  <b>Hours: </b> <input type="number" id="Hours" value="8"><br><br>
 <b>Gross Pay</b> = <output name="Total" for=" Salary Hours"></output>
@@ -11,23 +11,30 @@
 
 <h2>Taxes</h2><br><br>
 
-<form oninput="Total.value=parseInt(Salary.value)*parseInt(Hours.value)/parseInt(Taxes.value)">
+<form oninput="Total.value=parseFloat(Salary.value)*parseInt(Hours.value)*parseFloat(Taxes.value)">
 <b>Money: </b><input type="number" id="Salary" value="15.65"><br><br>
  <b>Hours: </b> <input type="number" id="Hours" value="8"><br><br>
- <b>Taxes: </b> <input type="number" id="Taxes" value="30"><br><br>
+ <b>Taxes: </b> <input type="number" id="Taxes" value="0.30"><br><br>
+  
 <b>Tax money that is deducted:  </b> <output name="Total" for=" Salary Hours"></output>$
 
 </form><br>
 
 <h2>Net Pay (WIP)</h2><br><br>
 
-<form oninput="Total.value=parseInt(Salary.value)*parseInt(Hours.value)/parseInt(Taxes.value)">
-<b>Money: </b><input type="number" id="Salary" value="15.65"><br><br>
- <b>Hours: </b> <input type="number" id="Hours" value="8"><br><br>
- <b>Taxes: </b> <input type="number" id="Taxes" value="0.30">%<br><br>
-<b>Net Pay:  </b> <output name="Total" for=" Salary Hours"></output>$
+<form oninput="Total.value=parseFloat(Grosspay.value)-parseFloat(Taxes.value)">
+
+<b> Gross pay: </b><input type="number" id="Grosspay" value="125.2"><br><br>
+<b> Taxes Deducton:</b><input type="number" id="Taxes" value="37.56"><br><br>
+
+
+ 
+  
+<b>Net Pay: </b> = <output name="Total" for=" Net Pay"></output>$
 
 </form><br>
+
+
   
 
   
