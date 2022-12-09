@@ -33,9 +33,9 @@ function myHitOther(my1,my2){
 
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-       alert('you lose')  
+       alert('You win!')  
        document.getElementById('myImg01').style.left = '20px'
-       location = 't2a13-keydown.html'  // go to your next level
+       location = 'game2.html'  // go to your next level
    }
 
 
@@ -51,11 +51,9 @@ function myCheckHit(){
 <img id="myImg01" style="position:absolute; width:100px; height:80px; top:500px; left:50px;"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTa1S0hGffBlE082_GkAqVsBZjx6AxKhgFSSdZFuhzw&s">
 
 
-<img id="myImg02" style="position:absolute; width:515px; height:150px; top:500px; left:250px;" src="https://png.pngtree.com/thumb_back/fh260/background/20200821/pngtree-simple-dark-red-solid-color-wallpaper-image_396557.jpg">
+<img id="myImg02" style="position:absolute; width:250px; height:100px; top:100px; left:250px;" src="https://png.pngtree.com/thumb_back/fh260/background/20200821/pngtree-simple-dark-red-solid-color-wallpaper-image_396557.jpg">
 
-<img id="myImg02" style="position:absolute; width:100px; height:500px; top:500px; left:250px;" src="https://png.pngtree.com/thumb_back/fh260/background/20200821/pngtree-simple-dark-red-solid-color-wallpaper-image_396557.jpg">
 
-<img id="myImg02" style="position:absolute; width:50px; height:300px; top:250px; left:500px;" src="https://png.pngtree.com/thumb_back/fh260/background/20200821/pngtree-simple-dark-red-solid-color-wallpaper-image_396557.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
