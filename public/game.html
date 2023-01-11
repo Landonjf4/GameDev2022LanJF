@@ -79,7 +79,7 @@ function myCheckHit(){
 }"><br><br>
 
 
-<input type=button value="Image Right" onTouchStart="{this.click(); event.preventDefault();}" onclickdown="{
+<input type=button value="Image Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 20 + 'px'
   myCheckHit()     // checks for all collisions
 }">
