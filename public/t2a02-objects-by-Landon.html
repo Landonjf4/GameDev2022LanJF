@@ -1,32 +1,38 @@
-Version 0.0.3
+<input type="button" value="Example Object Set and Show" onclick="{
+  let myPerson = {   
+    'firstName' : 'John',
+    'lastName'  : 'Doe',
+    'age'       :  50,
+    'eyeColor'  : 'blue'
+  }
+   document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
+   document.getElementById('myDiv01').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+   document.getElementById('myDiv01').innerHTML += 'lastName: ' + myPerson.lastName + '<br>'
+   document.getElementById('myDiv01').innerHTML += 'age: ' + myPerson.age + '<br>'
+   document.getElementById('myDiv01').innerHTML += 'eyeColor: ' + myPerson.eyeColor + '<br>'
+}">
 
-<h2 align=center>t2a02-objects-by-Landon.html</h2>
-
-<a href="https://www.w3schools.com/js/js_objects.asp">Good reference to Javascript Objects</a><br>
+<div id="myDiv01">...</div>
 
 
-<h2>JavaScript Objects</h2>
+<br>
 
-<p id="myDiv01"></p>
 
-<script>
-// Create an object:
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+<input type="button" value="Example Object Set and Show" onclick="{
+  let myPerson2 = {   
+    'firstCat' : 'Izzy',
+    'lastCat'  : 'Oscar',
+    'age'       :  50,
+    'furColor'  : 'Brown'
+  }
+   document.getElementById('myDiv02').innerHTML = '<br>myPerson2 Object has properties: <br>'
+   document.getElementById('myDiv02').innerHTML += 'firstName: ' + myPerson2.firstCat + '<br>'
+   document.getElementById('myDiv02').innerHTML += 'lastName: ' + myPerson2.lastCat + '<br>'
+   document.getElementById('myDiv02').innerHTML += 'age: ' + myPerson2.age + '<br>'
+   document.getElementById('myDiv02').innerHTML += 'eyeColor: ' + myPerson2.furColor + '<br>'
+}">
 
-// Display some data from the object:
-document.getElementById("myDiv01").innerHTML =
-person.firstName + " is " + person.age + " years old.";
-</script>
+<div id="myDiv02">...</div>
 
-<h2>Javascript Objects (With more objects)</h2>
 
-<p id="myDiv02"></p>
-
-<script>
-// Create an object:
-const color = {firstColor:"First color:", secondColor:"Second color:", thirdColor:"Third color:    ", fourthColor:"Fourth color:   ", fifthColor:"Fifth color:   ", sixthColor:"Sixth color:   ", seventhColor:"Eight color:   "};
-
-// Display some data from the object:
-document.getElementById("myDiv02").innerHTML =
-color.firstColor + " Red      " + color.secondColor + " Orange       " + color.ThirdColor + " Yellow " + color.fourthColor + " Green     " + color.fifthColor + " Blue      " + color.sixthColor + " Purple     " + color.seventhColor + " Pink     ";
-</script>
+<br>
